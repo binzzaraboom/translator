@@ -1,0 +1,36 @@
+[server]
+headless = true
+port = 8501
+
+[browser]
+gatherUsageStats = false
+
+[client]
+# 개발자 메뉴(Deploy 등)는 숨기고, Theme(라이트/다크 모드 전환) 메뉴는 남긴다.
+toolbarMode = "viewer"
+
+[theme]
+# 한글·일본어(가나/한자)·베트남어 성조를 모두 지원하는 Noto Sans KR (결과 칸도 같은 글꼴 사용)
+# 주의: URL 하나에 글꼴 패밀리를 여러 개 넣으면 Streamlit이 테마 전체를 무시한다.
+font = "'Noto Sans KR':https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap"
+codeFont = "'Noto Sans KR':https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap"
+codeFontSize = "1rem"
+baseRadius = "0.75rem"
+showWidgetBorder = true
+
+# 사용자가 메뉴(⋮ → Theme)에서 라이트/다크 모드를 고를 수 있다. 기본값은 기기 설정(System).
+[theme.light]
+primaryColor = "#4F46E5"
+backgroundColor = "#FFFFFF"
+secondaryBackgroundColor = "#F5F6FA"
+codeBackgroundColor = "#F5F6FA"
+textColor = "#1F2333"
+borderColor = "#E2E4EC"
+
+[theme.dark]
+primaryColor = "#8B93FF"
+backgroundColor = "#0F1117"
+secondaryBackgroundColor = "#1A1D27"
+codeBackgroundColor = "#1A1D27"
+textColor = "#E6E8F0"
+borderColor = "#2E3240"
